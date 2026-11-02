@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, map, switchMap, tap } from 'rxjs';
 import { Course, CoursePayload, Student, StudentPayload } from '../models/models';
-/** Shared response contract with Spring Boot ApiResponse<T>. */
 export interface ApiResponse<T> {
     success: boolean;
     message: string;
